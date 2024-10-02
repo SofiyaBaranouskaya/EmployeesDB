@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сотрудники - Добавление</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        input, select {
+            width: calc(33% - 16px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #projectsInput {
+            width: calc(33% - 16px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 100px;
+            resize: vertical;
+        }
+        #projectsInput::before {
+            content: "• ";
+            display: inline-block;
+            margin-right: 5px;
+        }
+        #projectsInput::after {
+            content: "\A"; /* Вставка символа перевода строки */
+            white-space: pre; /* Сохранение пробелов */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Записи</h1>
+
+<h2>Добавить новую запись</h2>
+<label for="departmentInput">Отдел:</label>
+<input type="text" id="departmentInput" required>
+
+<label for="positionInput">Должность:</label>
+<input type="text" id="positionInput" required>
+
+<label for="fioInput">ФИО:</label>
+<input type="text" id="fioInput" required>
+
+<label for="addressInput">Адрес:</label>
+<input type="text" id="addressInput" required>
+
+<label for="phoneInput">Телефон:</label>
+<input type="text" id="phoneInput" required>
+
+<label for="dobInput">Дата рождения:</label>
+<input type="date" id="dobInput" required>
+
+<label for="educationInput">Образование:</label>
+<input type="text" id="educationInput" required>
+
+<label for="experienceInput">Стаж работы:</label>
+<input type="text" id="experienceInput" required>
+
+<label for="unionInput">Членство в профсоюзе:</label>
+<select id="unionInput">
+    <option value="Нет">Нет</option>
+    <option value="Да">Да</option>
+</select>
+
+<label for="partyInput">Членство в политической партии:</label>
+<select id="partyInput">
+    <option value="Нет">Нет</option>
+    <option value="Да">Да</option>
+</select>
+
+<label for="disabilityInput">Инвалидность:</label>
+<select id="disabilityInput">
+    <option value="-">-</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+
+<label for="diseaseInput">Профзаболевание:</label>
+<input type="text" id="diseaseInput">
+
+<label for="infoInput">Дополнительная информация:</label>
+<input type="text" id="infoInput">
+
+<label for="projectsInput">Проекты:</label>
+<textarea id="projectsInput" placeholder="Введите проекты, каждый проект на новой строке"></textarea>
+
+<button onclick="addRecord()">Добавить</button>
+
+<script>
+    function addRecord() {
+        const department = document.getElementById('departmentInput').value;
+        const position = document.getElementById('positionInput').value;
+        const fio = document.getElementById('fioInput').value;
+        const address = document.getElementById('addressInput').value;
+        const phone = document.getElementById('phoneInput').value;
+        const dob = document.getElementById('dobInput').value;
+        const education = document.getElementById('educationInput').value;
+        const experience = document.getElementById('experienceInput').value;
+        const union = document.getElementById('unionInput').value;
+        const party = document.getElementById('partyInput').value;
+        const disability = document.getElementById('disabilityInput').value;
+        const disease = document.getElementById('diseaseInput').value;
+        const info = document.getElementById('infoInput').value;
+        const projects = document.getElementById('projectsInput').value.trim().split('\n');
+
+        if (department && position && fio && address && phone && dob && education && experience) {
+            // Здесь вы должны отправить данные на сервер для добавления записи в базу данных
+            // Например, используя AJAX запрос
+            // После успешного добавления записи вы можете перенаправить пользователя на страницу с таблицей
+            // window.location.href = "records.html";
+        } else {
+            alert('Пожалуйста, заполните все обязательные поля.');
+        }
+    }
+</script>
+
+</body>
+</html>
