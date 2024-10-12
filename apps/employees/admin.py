@@ -7,8 +7,9 @@ admin.site.unregister(Group)
 
 
 class YourModelAdmin(admin.ModelAdmin):
-    list_display = ('fio', 'address', 'phone', 'birth_date', 'education', 'qualification', 'department', 'work_experience', 'union_membership', 'political_party_membership', 'occupational_disease', 'disability', 'additional_info')
-    list_filter = ('fio', 'address', 'phone', 'birth_date', 'education', 'qualification', 'department', 'work_experience', 'union_membership', 'political_party_membership', 'occupational_disease', 'disability')
+    list_display = ('fio', 'address', 'phone', 'birth_date', 'education', 'qualification', 'department', 'work_experience', 'salary', 'union_membership', 'additional_info')
+    list_filter = ('qualification', 'department', 'work_experience', 'union_membership')
+    search_fields = ('fio', 'department')
 
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'company', 'manager')
@@ -23,3 +24,4 @@ class ManagerAdmin(admin.ModelAdmin):
 admin.site.register(Employee, YourModelAdmin)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Manager, ManagerAdmin)
+

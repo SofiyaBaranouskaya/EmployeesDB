@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bb364be-7761-41e8-ad01-3b4256acb363" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Employees_BD/.idea/Employees_BD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/employees/migrations/0008_alter_employee_options_alter_manager_options_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/employees/migrations/0009_alter_manager_options_alter_manager_employees_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/employees/migrations/0010_alter_project_employees.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/employees/migrations/0011_remove_employee_disability_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/employees/migrations/0012_employee_salary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employees/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employees/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/employees/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/employees/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employees/add_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employees/main.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +33,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -33,16 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.models.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Конспекты/3 курс/ТРПО/Employees_BD"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.models.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Конспекты/3 курс/ТРПО/Employees_BD&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Конспекты\3 курс\ТРПО\Employees_BD" />
